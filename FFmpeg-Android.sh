@@ -11,17 +11,14 @@ LDFLAGS=-L/Users/xiaoyingchun/Downloads/android-ndk/sources/x264-android/android
 
 ./configure \
         --prefix=$PREFIX \
-        --enable-shared \
-        --disable-static \
-        --disable-doc \
+	--enable-shared \
+	--disable-doc \
         --disable-ffmpeg \
         --disable-ffplay \
         --disable-ffprobe \
         --disable-ffserver \
         --disable-doc \
-        --disable-protocols \
         --disable-symver \
-	--enable-protocol=file \
         --enable-muxer=mp4 \
         --enable-demuxer=mov \
         --enable-memalign-hack \
